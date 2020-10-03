@@ -1,4 +1,4 @@
-const bitcore = require('bitcore-lib-cash');
-const lib = require('./lib');
+var bitcore = require('bitcore-lib-cash');
+bitcore.P2P = require('./lib');
 
-module.exports = { ...lib, bitcore };
+module.exports = bitcore.P2P;
